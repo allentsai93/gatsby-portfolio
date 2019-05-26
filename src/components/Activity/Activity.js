@@ -22,7 +22,7 @@ const Activity = (props) => {
             <p><a href={content.object.repository.url}><Emoji symbol="🗃" label="repo"/> {content.object.repository.name}</a></p>
             <p>{content.object.message}</p>
             <p className={styles.stats}><Emoji symbol="📝" label="add" /> {content.object.additions} additions, 
-            {content.object.deletions} deletions </p>
+            {content.object.deletions ? content.object.deletions : ' 0'} deletions </p>
             <p className={styles.stats}><Emoji symbol="🗂" label="add" /> {content.object.changedFiles} file(s) changed</p>
             <p className={styles.total}><Emoji symbol="📈" label="add" /> {content.object.history.totalCount} total commits</p>              
         </div>
