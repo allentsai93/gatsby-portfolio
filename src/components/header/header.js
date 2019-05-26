@@ -20,39 +20,45 @@ const Header = ({ siteTitle }) => (
       <h2 style={{ margin: 0 }}>Full Stack Developer</h2>
     </div>
     <div className={styles.navigation}>
-      <h3>
+      <span>
         <Link
           to="/projects"
           style={{
             color: `black`,
             textDecoration: `none`,
+            fontWeight: `lighter`
+          }}
+          activeStyle={{
+            fontWeight: `bolder`
           }}
         >
           Projects
         </Link>
-      </h3>
-      <h3>
+      </span>
+      <span>
         <a
           href="https://github.com/allentsai93"
           style={{
             color: `black`,
             textDecoration: `none`,
+            fontWeight: `lighter`
           }}
         >
           GitHub
         </a>
-      </h3>
-      <h3>
+      </span>
+      <span>
         <a
           href="https://www.linkedin.com/in/allentsaidev/"
           style={{
             color: `black`,
             textDecoration: `none`,
+            fontWeight: `lighter`
           }}
         >
           LinkedIn
         </a>
-      </h3>
+      </span>
     </div>
   </header>
 )

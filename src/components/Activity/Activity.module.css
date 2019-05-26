@@ -7,9 +7,62 @@
 
 .container {
     border-bottom: 1px solid #e6e6e6;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .container * {
     margin: 0;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 50%;
+    overflow: hidden;
+    min-width: 60px;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 11;
+    padding-left: 10px;
+    border-left: 1px solid #fdf5f5;
+    margin-left: 10px;
+}
+
+.stats {
+    font-size: 0.7rem;
+    background-color: whitesmoke;
+    padding: 2px 5px;
+    margin-top: 3px;
+}
+
+.total {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+    margin-top: 3px;
 }
